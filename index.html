@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NBA PLAYERS</title>
+    <link rel="icon" href="Images/logo.png">
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+
+    <section class="slider-container">
+      <div class="slider-images">
+        <div class="slider-img">
+          <img src="Images/1.jpg" alt="1" />
+          <h1>Morant</h1>
+          <div class="details">
+            <h2>Base</h2>
+            <p>Ja Morant</p>
+          </div>
+
+        </div>
+
+        <div class="slider-img">
+          <img src="Images/2.jpg" alt="2" />
+          <h1>Curry</h1>
+          <div class="details">
+            <h2>Base</h2>
+            <p>Stephen Curry</p>
+          </div>
+
+        </div>
+
+        <div class="slider-img">
+          <img src="Images/3.jpg" alt="3" />
+          <h1>Durant</h1>
+          <div class="details">
+            <h2>Alero</h2>
+            <p>Kevin Durant</p>
+          </div>
+
+        </div>
+
+        <div class="slider-img active">
+          <img src="Images/4.jpg" alt="4" />
+          <h1>James</h1>
+          <div class="details">
+            <h2>Alero</h2>
+            <p>Lebron James</p>
+          </div>
+
+        </div>
+
+        <div class="slider-img">
+          <img src="Images/5.jpg" alt="5" />
+          <h1>Lamelo</h1>
+          <div class="details">
+            <h2>Base</h2>
+            <p>Lamelo Ball</p>
+          </div>
+
+        </div>
+
+        <div class="slider-img">
+          <img src="Images/6.jpg" alt="6" />
+          <h1>Tatum</h1>
+          <div class="details">
+            <h2>Alero</h2>
+            <p>Jason Tatum</p>
+          </div>
+
+        </div>
+
+        <div class="slider-img">
+          <img src="Images/7.jpg" alt="7" />
+          <h1>Ant</h1>
+          <div class="details">
+            <h2>Escolta</h2>
+            <p>Antony Edwards</p>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    
+    <script src="js/jQuery.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
